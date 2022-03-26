@@ -16,20 +16,14 @@
             <RowDefinition Height="1*"/>
             <RowDefinition Height="5"/>
             <RowDefinition Height="1*"/>
+            <RowDefinition Height="5"/>
+            <RowDefinition Height="1*"/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="1*"/>
             <ColumnDefinition Width="5"/>
             <ColumnDefinition Width="1*"/>
         </Grid.ColumnDefinitions>
-        
-        <Border
-            BorderThickness="2"
-            BorderBrush="Black"
-            Grid.Column="2"
-            Grid.Row="2"
-            Background="#FFB62A2A"
-            />
         <ScrollViewer>
             <StackPanel Background="#FFE6E0E0">
                 <Border Background="Red" MinHeight="50"/>
@@ -54,5 +48,36 @@
             <Border Background="Purple" Height="50" Width="50"/>
             <Border Background="White" Height="50" Width="50"/>
         </WrapPanel>
+        <Label
+            Grid.Row="2"
+            Background="#FFF9E7E7"
+            HorizontalContentAlignment="Center"
+            VerticalContentAlignment="Center"
+            FontSize="24"
+            >
+            Label
+        </Label>
+        <Button
+            Grid.Column="2"
+            Grid.Row="2"
+            FontSize="24"
+            >
+            Button
+        </Button>
+        <TextBlock
+            Grid.Row="4"
+            TextWrapping="Wrap"
+            FontSize="16"
+            LineHeight="21" 
+            TextAlignment="Justify"
+            >
+            Blok tekstowy Blok tekstowy Blok tekstowy Blok tekstowy Blok tekstowy Blok tekstowy Blok tekstowy Blok tekstowy Blok tekstowy Blok tekstowy Blok tekstowy Blok tekstowy Blok tekstowy 
+        </TextBlock>
+        <TextBox
+            Grid.Column="2"
+            Grid.Row="4"
+            TextWrapping="Wrap" FontSize="16">
+            TextBox
+        </TextBox>
     </Grid>
 </Window>
