@@ -12,6 +12,9 @@
     Width="450"
     FontSize="16"
     >
+    <Window.Resources>
+        <SolidColorBrush x:Key="KolorTekstu" Color="#FF31DE88"/>
+    </Window.Resources>
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="1*"/>

@@ -6,6 +6,8 @@
     StartupUri="MainWindow.xaml"
     >
     <Application.Resources>
+        <SolidColorBrush x:Key="KolorTekstu" Color="#FF8831DE"/>
+
         <Style TargetType="Label">
             <Setter Property="FontSize" Value="24"/>
         </Style>
@@ -22,7 +24,7 @@
             x:Key="Spec"
             BasedOn="{StaticResource {x:Type TextBlock}}"
             >
-            <Setter Property="Foreground" Value="Blue"/>
+            <Setter Property="Foreground" Value="{DynamicResource KolorTekstu}"/>
         </Style>
 
         <Style
