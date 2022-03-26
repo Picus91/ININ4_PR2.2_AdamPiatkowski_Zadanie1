@@ -60,14 +60,15 @@
             <Border Background="White" Height="50" Width="50"/>
         </WrapPanel>
         <Label
+            Background="{DynamicResource GradientCzerwonoBiały}"
             Grid.Row="2"
-            Background="#FFF9E7E7"
             HorizontalContentAlignment="Center"
             VerticalContentAlignment="Center"
             >
             Label
         </Label>
         <Button
+            Template="{DynamicResource NaszPrzycisk}"
             Grid.Column="2"
             Grid.Row="2"
             >
@@ -77,13 +78,13 @@
             Grid.Row="4"
             Style="{StaticResource Spec}"
             >
-            Blok tekstowy Blok tekstowy Blok tekstowy Blok tekstowy Blok tekstowy Blok tekstowy Blok tekstowy Blok tekstowy Blok tekstowy Blok tekstowy Blok tekstowy Blok tekstowy Blok tekstowy 
+            Blok tekstowy Blok tekstowy Blok tekstowy Blok tekstowy Blok tekstowy Blok tekstowy Blok tekstowy Blok tekstowy Blok tekstowy Blok tekstowy Blok tekstowy Blok tekstowy Blok tekstowy
         </TextBlock>
         <TextBlock
             Grid.Row="4"
             Grid.Column="2"
             >
-            Blok tekstowy Blok tekstowy Blok tekstowy Blok tekstowy Blok tekstowy Blok tekstowy Blok tekstowy Blok tekstowy Blok tekstowy Blok tekstowy Blok tekstowy Blok tekstowy Blok tekstowy 
+            Blok tekstowy Blok tekstowy Blok tekstowy Blok tekstowy Blok tekstowy Blok tekstowy Blok tekstowy Blok tekstowy Blok tekstowy Blok tekstowy Blok tekstowy Blok tekstowy Blok tekstowy
         </TextBlock>
     </Grid>
 </Window>
