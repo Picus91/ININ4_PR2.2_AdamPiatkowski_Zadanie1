@@ -13,88 +13,106 @@
     FontSize="16"
     >
     <Window.Resources>
-        <SolidColorBrush x:Key="KolorTekstu" Color="#FF31DE88"/>
-        <SolidColorBrush x:Key="Button.MouseOver.Background" Color="#FFECBEFD"/>
-        <SolidColorBrush x:Key="Button.MouseOver.Border" Color="#FF863CB1"/>
-        <SolidColorBrush x:Key="Button.Pressed.Background" Color="#FFF6C4D4"/>
-        <SolidColorBrush x:Key="Button.Pressed.Border" Color="#FF8B2C60"/>
-        <SolidColorBrush x:Key="Button.Disabled.Background" Color="#FFF4F4F4"/>
-        <SolidColorBrush x:Key="Button.Disabled.Border" Color="#FFADB2B5"/>
-        <SolidColorBrush x:Key="Button.Disabled.Foreground" Color="#FF838383"/>
+
     </Window.Resources>
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="1*"/>
-            <RowDefinition Height="5"/>
-            <RowDefinition Height="1*"/>
-            <RowDefinition Height="5"/>
-            <RowDefinition Height="1*"/>
+            <RowDefinition Height="150"/>
+            <RowDefinition/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="1*"/>
-            <ColumnDefinition Width="5"/>
-            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-        <ScrollViewer>
-            <ScrollViewer.Resources>
-                <Style
-                    TargetType="Border"
-                    BasedOn="{StaticResource {x:Type Border}}">
-                    <Setter Property="BorderBrush" Value="Beige"/>
-                </Style>
-            </ScrollViewer.Resources>
-            <StackPanel Background="#FFE6E0E0">
-                <Border Background="Red" MinHeight="50"/>
-                <Border Background="Green" MinHeight="50"/>
-                <Border Background="Red" MinHeight="50"/>
-                <Border Background="Green" MinHeight="50"/>
-                <Border Background="Red" MinHeight="50"/>
-                <Border Background="Green" MinHeight="50"/>
-                <Border Background="Red" MinHeight="50"/>
-                <Border Background="Green" MinHeight="50"/>
+        <WrapPanel
+            Grid.ColumnSpan="2"
+
+            >
+            <Button
+            Template="{DynamicResource NaszPrzycisk}"
+                Background="{DynamicResource DifferentButton.Disabled.Background}">
+                Button
+            </Button>
+            <Button
+            Template="{DynamicResource NaszPrzycisk}">
+                Button
+            </Button>
+            <Button
+            Template="{DynamicResource NaszPrzycisk}">
+                Button
+            </Button>
+            <Button
+            Template="{DynamicResource NaszPrzycisk}">
+                Button
+            </Button>
+            <Button
+            Template="{DynamicResource NaszPrzycisk}">
+                Button
+            </Button>
+            <Button
+            Template="{DynamicResource NaszPrzycisk}">
+                Button
+            </Button>
+            <Button
+            Template="{DynamicResource NaszPrzycisk}">
+                Button
+            </Button>
+            <Button
+            Template="{DynamicResource NaszPrzycisk}">
+                Button
+            </Button>
+            <Button
+            Template="{DynamicResource NaszPrzycisk}">
+                Button
+            </Button>
+            <Button
+            Template="{DynamicResource NaszPrzycisk}">
+                Button
+            </Button>
+            <Button
+            Template="{DynamicResource NaszPrzycisk}">
+                Button
+            </Button>
+        </WrapPanel>
+
+        <ScrollViewer
+            Grid.Row="1"
+            Grid.Column="0">
+            <StackPanel>
+                <Label
+                    Style="{StaticResource LabelStyle}">
+                    Label
+                </Label>
+                <Label>
+                    Label
+                </Label>
+                <Label>
+                    Label
+                </Label>
+                <Label>
+                    Label
+                </Label>
+                <Label>
+                    Label
+                </Label>
+                <Label>
+                    Label
+                </Label>
+                <Label>
+                    Label
+                </Label>
+                <Label>
+                    Label
+                </Label>
+                <Label>
+                    Label
+                </Label>
+                <Label>
+                    Label
+                </Label>
+                
             </StackPanel>
         </ScrollViewer>
-        <WrapPanel
-            Grid.Column="2"
-            Background="#FFE2C2C2"
-            >
-            <Border Background="Red" Height="50" Width="50"/>
-            <Border Background="Olive" Height="50" Width="50"/>
-            <Border Background="Green" Height="50" Width="50"/>
-            <Border Background="Teal" Height="50" Width="50"/>
-            <Border Background="Blue" Height="50" Width="50"/>
-            <Border Background="Purple" Height="50" Width="50"/>
-            <Border Background="White" Height="50" Width="50"/>
-        </WrapPanel>
-        <Label
-            Template="{DynamicResource NaszaEtykieta}"
-            Background="{DynamicResource GradientCzerwonoBiały}"
-            Grid.Row="2"
-            HorizontalContentAlignment="Center"
-            VerticalContentAlignment="Center"
-            BorderBrush="#FF131313"
-            BorderThickness="3"
-            >
-            Label
-        </Label>
-        <Button
-            Template="{DynamicResource NaszPrzycisk}"
-            Grid.Column="2"
-            Grid.Row="2"
-            >
-            Button
-        </Button>
-        <TextBlock
-            Grid.Row="4"
-            Style="{StaticResource Spec}"
-            >
-            Blok tekstowy Blok tekstowy Blok tekstowy Blok tekstowy Blok tekstowy Blok tekstowy Blok tekstowy Blok tekstowy Blok tekstowy Blok tekstowy Blok tekstowy Blok tekstowy Blok tekstowy
-        </TextBlock>
-        <TextBlock
-            Grid.Row="4"
-            Grid.Column="2"
-            >
-            Blok tekstowy Blok tekstowy Blok tekstowy Blok tekstowy Blok tekstowy Blok tekstowy Blok tekstowy Blok tekstowy Blok tekstowy Blok tekstowy Blok tekstowy Blok tekstowy Blok tekstowy
-        </TextBlock>
     </Grid>
 </Window>
+
