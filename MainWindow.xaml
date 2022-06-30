@@ -9,7 +9,7 @@
     
     Title="Przykładowa Aplikacja"
     Height="550"
-    Width="450"
+    Width="550"
     FontSize="16"
     >
     <Window.Resources>
