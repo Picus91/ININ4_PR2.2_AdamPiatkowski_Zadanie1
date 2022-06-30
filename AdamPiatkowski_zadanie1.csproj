@@ -3,7 +3,7 @@
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
     <TargetFramework>net5.0-windows</TargetFramework>
-    <RootNamespace>NET_ININ4_PR2._2</RootNamespace>
+    <RootNamespace>AdamPiatkowski_zadanie1</RootNamespace>
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
